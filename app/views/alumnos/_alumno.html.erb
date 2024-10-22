@@ -1,0 +1,37 @@
+<div id="<%= dom_id alumno %>">
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Name:</strong>
+    <%= alumno.name %>
+  </p>
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Lastname:</strong>
+    <%= alumno.lastname %>
+  </p>
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Email:</strong>
+    <%= alumno.email %>
+  </p>
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Dni:</strong>
+    <%= alumno.dni %>
+  </p>
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Address:</strong>
+    <%= alumno.address %>
+  </p>
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Edad:</strong>
+    <%= alumno.edad %>
+  </p>
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Image:</strong>
+    <%= link_to alumno.image.filename, alumno.image if alumno.image.attached? %>
+  </p>
+
+</div>
